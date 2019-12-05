@@ -67,7 +67,7 @@ pipeline{
 
 			stage('Code check'){
 				steps{
-					//insert code checks
+					echo "insert code check"
 					}
 			}
 			
@@ -83,13 +83,13 @@ pipeline{
 			
 			stage('Test'){
 				steps{
-					//insert functional/integration tests
+					echo "insert functional/integration tests"
 				}
 			}
 			
 			stage('Archive'){
 				steps{
-					//insert artifact repository
+					echo "insert artifact repository"
 				}
 			}
 			
@@ -99,4 +99,4 @@ pipeline{
 				}
 			}
 		}
-	}
+	}	
