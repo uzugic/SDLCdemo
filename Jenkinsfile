@@ -13,20 +13,19 @@ pipeline{
 				checkout scm 
 				}
 			}
-<<<<<<< HEAD
 		
 /*		stage('Terraform init'){
 				steps{
 					sh 'terraform init -input=false'
 					}
 				}
-=======
+
 //			stage('Terraform init'){
 //				steps{
 //					sh 'terraform init -input=false'
 //					}
 //				}
->>>>>>> 07f81876949632e6e14e4c348f1d97ec2c51c554
+
 			
 //			stage('Run tests'){
 //				steps{
@@ -53,20 +52,19 @@ pipeline{
 //				}
 //			}
 			
-<<<<<<< HEAD
 			stage('Deploying the configuration'){
 				steps{
 				sh 'terraform apply -input=false plan.out'
 				}
 			}
 */				
-=======
+
 //			stage('Deploying the configuration'){
 //				steps{
 //				sh 'terraform apply -input=false plan.out'
 //				}
 //			}	
->>>>>>> 07f81876949632e6e14e4c348f1d97ec2c51c554
+
 			stage('Code check'){
 				steps{
 					//insert code checks
@@ -101,8 +99,5 @@ pipeline{
 				}
 			}
 		}
-<<<<<<< HEAD
 	}
-=======
-	}
->>>>>>> 07f81876949632e6e14e4c348f1d97ec2c51c554
+}
