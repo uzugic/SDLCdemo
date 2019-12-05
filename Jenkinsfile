@@ -72,9 +72,9 @@ pipeline{
 			}
 			
 			stage('Build the app'){
-				/*
+				
 				steps{
-				script {
+		/*		script {
                   def pom = readMavenPom file: 'pom.xml'
                   version = pom.version
               }
