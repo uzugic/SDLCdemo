@@ -72,11 +72,13 @@ pipeline{
 			}
 			
 			stage('Build the app'){
+				/*
 				steps{
 				script {
                   def pom = readMavenPom file: 'pom.xml'
                   version = pom.version
               }
+	      */
 					sh "mvn clean install -DskipTests=true"
 				}
 			}
