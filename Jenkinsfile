@@ -13,7 +13,8 @@ pipeline{
 				checkout scm 
 				}
 			}
-			stage('Terraform init'){
+		
+/*		stage('Terraform init'){
 				steps{
 					sh 'terraform init -input=false'
 					}
@@ -48,7 +49,8 @@ pipeline{
 				steps{
 				sh 'terraform apply -input=false plan.out'
 				}
-				
+			}
+*/				
 			stage('Code check'){
 				steps{
 					//insert code checks
@@ -68,6 +70,7 @@ pipeline{
 			stage('Test'){
 				steps{
 					//insert functional/integration tests
+				}
 			}
 			
 			stage('Archive'){
@@ -81,7 +84,5 @@ pipeline{
 					sh "mvn clean package"
 				}
 			}
-			}
 		}
 	}
-}
