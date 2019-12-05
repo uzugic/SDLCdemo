@@ -10,7 +10,7 @@ public class HelloService {
 	
 	@Bean
 	public void hello() {
-		System.out.println("Hello there friend! This is a DEMO application for the SDLC team.);
+		System.out.println("Hello there friend! This is a DEMO application for the SDLC team.");
 	}
 
 }
